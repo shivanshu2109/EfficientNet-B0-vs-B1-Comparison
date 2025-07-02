@@ -30,17 +30,16 @@ We build the models **from scratch** to understand performance trade-offs across
 
 ---
 
-## 🆚 Models Compared
+### 🔍 Model Comparison
 
-| Model                | Width Coeff | Depth Coeff | Description                          |
-|---------------------|-------------|-------------|--------------------------------------|
-| EfficientNet-Lite B0 | 1.0         | 1.0         | ✅ Baseline version                  |
-| EfficientNet-Lite B1 (Mini) | 1.2         | 1.4         | 🚀 Slightly deeper & wider version |
+We trained two custom EfficientNet variants:
+- **B0-like Model** (Baseline)
+- **Mini B1 Model** (Deeper, more complex)
 
----
+| Model       | Final Val Accuracy | Best Val Accuracy | Comments |
+|-------------|--------------------|-------------------|----------|
+| B0-like     | 34.37%             | ✅ Best performance | Stable learning |
+| Mini B1     | 24.14%             | ❌ Lower accuracy  | Early overfitting |
 
-## ⚙️ Setup and Usage
-
-### 📦 Requirements
-```bash
-pip install torch torchvision matplotlib scikit-learn seaborn numpy
+📌 _Conclusion:_ The B0-like model generalizes better and is preferred for deployment or further improvement.
+all torch torchvision matplotlib scikit-learn seaborn numpy
