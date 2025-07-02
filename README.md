@@ -1,9 +1,5 @@
 # 🚀 EfficientNet-B0 vs. B1 Comparison on CIFAR-100
 
-![PyTorch](https://img.shields.io/badge/Framework-PyTorch-red?logo=pytorch)
-![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
-![License](https://img.shields.io/badge/License-MIT-blue)
-![Stars](https://img.shields.io/github/stars/shivanshu2109/EfficientNet-B0-vs-B1-Comparison?style=social)
 
 > 📊 Compare training speed, accuracy, and generalization between two EfficientNet-Lite architectures built from scratch in **PyTorch**!
 
